@@ -9,7 +9,7 @@ const queue = new Map();
 const client = new Discord.Client();
 
 
-const prefix = "T";
+const prefix = "w";
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	
@@ -214,8 +214,8 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`??? ????? : **${song.title}**`);
 }
 
-const adminprefix = "Tvip";
-const devs = ['465599647327453194'];
+const adminprefix = "wvip";
+const devs = ['427872873198387200'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
